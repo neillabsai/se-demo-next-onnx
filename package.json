@@ -4,14 +4,26 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.4",
+    "autoprefixer": "^10.4.8",
+    "axios": "^0.27.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "daisyui": "^2.24.0",
+    "konva": "^8.3.12",
     "next": "12.2.5",
+    "onnxruntime-web": "^1.12.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-daisyui": "^2.3.2",
+    "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.2",
+    "react-konva": "^18.2.1",
+    "react-photo-gallery": "^8.0.0"
   },
   "devDependencies": {
     "@types/node": "18.7.14",
@@ -19,6 +31,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
+    "node-polyfill-webpack-plugin": "^2.0.1",
     "typescript": "4.8.2"
   }
 }
